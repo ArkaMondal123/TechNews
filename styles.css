@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255,255,255,255);
+}
+
+li ,a{
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #121213;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    color: #121213;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    font-size: larger;
+    color:rgba(2, 108, 134, 0.8)
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #0088a9;
+    font-size: larger;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(2, 108, 134, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fdfdff;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: rgb(2, 108, 134, 1);
+}
+
+.search-bar{
+    margin: auto;
+    margin-top : -0.3%;
+    position: relative;
+    width: 50%;
+    height: 42px;
+    border: 2px solid black;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+.search{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+.search-bar:hover{
+    border: 3px solid #0088a9;
+}
+
+.container{
+    overflow-y: hidden;
+}
+
+.content{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+    background: rgb(231, 226, 226);
+    margin: 10px;
+    text-align: justify;
+    float: left;
+    transition: all 0.3s ease 0s;
+}
+
+.content p{
+    background: rgb(231, 226, 226);
+    margin: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+
+}
+
+.author{
+    color: gray;
+    font-style: italic;
+    text-align: right;
+}
+
+.polarity{
+    color: green;
+}
+
+.content img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content:hover{
+    box-shadow: 5px 5px #888888;
+    cursor: pointer;
+}
+
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
